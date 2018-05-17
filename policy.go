@@ -507,6 +507,7 @@ func (p *Policy) addDefaultElementsWithoutAttrs() {
 	p.setOfElementsAllowedWithoutAttrs["ul"] = struct{}{}
 	p.setOfElementsAllowedWithoutAttrs["var"] = struct{}{}
 	p.setOfElementsAllowedWithoutAttrs["video"] = struct{}{}
+	p.setOfElementsAllowedWithoutAttrs["iframe"] = struct{}{}
 	p.setOfElementsAllowedWithoutAttrs["wbr"] = struct{}{}
 
 }
@@ -521,7 +522,6 @@ func (p *Policy) addDefaultSkipElementContent() {
 
 	p.setOfElementsToSkipContent["frame"] = struct{}{}
 	p.setOfElementsToSkipContent["frameset"] = struct{}{}
-	p.setOfElementsToSkipContent["iframe"] = struct{}{}
 	p.setOfElementsToSkipContent["noembed"] = struct{}{}
 	p.setOfElementsToSkipContent["noframes"] = struct{}{}
 	p.setOfElementsToSkipContent["noscript"] = struct{}{}
